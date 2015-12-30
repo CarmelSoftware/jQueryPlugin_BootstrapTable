@@ -1,1 +1,9 @@
-////////
+body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.jumbotron h1 {
+    
+    color: #a8a3a3;
+}
