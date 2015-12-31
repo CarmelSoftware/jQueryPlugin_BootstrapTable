@@ -7,3 +7,12 @@ body {
     
     color: #a8a3a3;
 }
+h2 {
+    font: 900 18px Verdana;
+    color: #a8a3a3;
+}
+
+.well p{
+    font: 700 12px Verdana !important;    
+    color: #a8a3a3;
+}
