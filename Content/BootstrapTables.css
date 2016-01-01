@@ -16,3 +16,7 @@ h2 {
     font: 700 12px Verdana !important;    
     color: #a8a3a3;
 }
+.well-footer, .well-footer a {
+    font: 900 10px Comic Sans MS;
+    color: #a8a3a3;
+}
