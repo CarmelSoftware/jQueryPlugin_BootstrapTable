@@ -20,3 +20,11 @@ h2 {
     font: 900 10px Comic Sans MS;
     color: #a8a3a3;
 }
+
+.alert {
+    font: 600 9px Verdana;
+}
+
+.centered {
+    text-align: center;
+}
