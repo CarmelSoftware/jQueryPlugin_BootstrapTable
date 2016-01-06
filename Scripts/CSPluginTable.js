@@ -10,3 +10,25 @@ jQuery(function ($) {
     /// Else, you can Ajax load the data, specifying the URL : { url : "Scripts/TableItems.js" }
     /// opts = { data : JSobject, url : "MyJSONData.js" }
     ////////////////////////////////////////////////////////////////////////////////////////////////////
+ jQuery.fn.Table = function (opts)
+    {
+
+        var $this = $(this);
+        $this.addClass("table-responsive");     
+
+        if (opts === undefined || (opts.data === undefined && opts.url === undefined)) {
+            opts = { data: null, url: "Scripts/TableItems.js" };
+            fnSendAjaxRequest(opts);
+        }
+        else if (opts.data === undefined) {
+            fnSendAjaxRequest(opts);
+        }
+        else if (opts.url === undefined) {
+            fnLoadData(opts.data);
+        }
+        else {
+            fnLoadData(opts.data);
+            fnSendAjaxRequest(opts);
+        }
+
+        return $this;    
