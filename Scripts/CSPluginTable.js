@@ -32,3 +32,16 @@ jQuery(function ($) {
         }
 
         return $this;    
+
+
+/////////////  Send Ajax Request ///////////////////////////////////////////////////////////////
+        function fnSendAjaxRequest(opts) {
+
+            $.getJSON(opts.url, fnLoadData, function (msg) {
+
+                alert("An Error has been thrown : " + msg);
+            });
+        }
+        
+        
+        
