@@ -45,3 +45,18 @@ jQuery(function ($) {
         
         
         
+ ///////////// Create  Panel Table  ////////////////////////////////////////////////////////////////
+        function fnLoadData(data) {
+
+            var $table = $("<table/>", { id: "customTable", class: "table table-hover table-striped" });
+            $this.append($table);
+            var $head = $("<thead/>", { class: "row" }).appendTo($table);
+            var $th1 = $("<th/>", { text: "Index", class: "col-xs-1  col-lg-1" }).appendTo($head);
+            var $th2 = $("<th/>", { text: "Image", class: "col-xs-3 col-lg-3" }).appendTo($head);
+            var $th3 = $("<th/>", { text: "Title", class: "col-xs-2 col-lg-2" }).appendTo($head);
+            var $th4 = $("<th/>", { text: "Text", class: "col-xs-6 col-lg-6" }).appendTo($head);
+            var $body = $("<tbody/>", { class: "" }).appendTo($table);
+
+             
+             
+             
