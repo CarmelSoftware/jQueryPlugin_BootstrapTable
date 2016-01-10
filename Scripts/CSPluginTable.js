@@ -58,5 +58,24 @@ jQuery(function ($) {
             var $body = $("<tbody/>", { class: "" }).appendTo($table);
 
              
-             
+   
+
+            $.each(data, function (index, obj)
+            {
+                var $row = $("<tr/>", { class: "row" }).appendTo($body);
+                var $td0 = $("<td />", { class: "col-xs-1  col-lg-1" }).appendTo($row);
+                var $index = $("<span/>", { class: "col-xs-3 col-lg-3", text: index }).appendTo($td0);
+                var $td1 = $("<td />", { class: "" }).appendTo($row);
+                var $a = $("<a/>", { href: obj.Url }).appendTo($td1);
+                $("<img/>", { class: "responsive img-rounded", src: obj.Image, alt: obj.Title }).appendTo($a);
+                var $td2 = $("<td />", { class: "col-xs-2 col-lg-2" }).appendTo($row);
+                $("<h3/>", { class: "", text: obj.Title }).appendTo($td2);
+                var $td3 = $("<td/>", { class: "col-xs-6 col-lg-6" }).appendTo($row)
+                .html(obj.Text);
+
+            });
+
+        }        
+    }
+});          
              
