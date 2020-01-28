@@ -1,5 +1,4 @@
 jQuery(function ($) {
-
     ///////////////////////////////////////////////////////////////////////////////////////////////////
     /// jQuery Plugin to display a  Panel Table with Bootstrap style
     ///       useful for displaying blog comments, comment threads, articles lists, Tweets, or any list 
